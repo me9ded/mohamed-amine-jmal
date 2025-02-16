@@ -9,6 +9,11 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    background-size: cover;
+    background-size: 50px 50px;
+}
+.about-me{
+
 }
 
 .container {
@@ -17,41 +22,41 @@ body {
     text-align: center;
 }
 
-.about-me {
-    background: #fff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.about-me:hover{
+
 }
 
 .social-links {
     margin-top: 20px;
-    position: relative; /* Fixes the position at the bottom */
+    position: relative; 
     bottom: 0;
-    width: 100%; /* Ensures the links span the entire width */
-    text-align: center; /* Centers the links horizontally */
+    width: 100%; 
+    text-align: center; 
 }
 
 .social-links a {
     margin: 0 10px;
-    color: #333;
+    color: darkgray;
     font-size: 30px;
     transition: color 0.3s;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none; 
+
 }
 
 .social-links a:hover {
-    color: #007bff; /* Changes color on hover */
+    color: #007bff; 
+    transform: translateY(-5px);
 }
 
 
 .social-links a:hover {
-    color: #0073b1; /* LinkedIn blue color */
+    color: #0073b1; 
+    transform: translateY(-5px);
 }
 
 .social-links a:first-child:hover {
-    color: #333; /* GitHub color */
+    color: #333; 
+    transform: translateY(-5px);
 }
 a.image-link {
     display: inline-block;
@@ -71,3 +76,72 @@ a.image-link:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-color: #aaa;
 }
+.projects{
+    position: relative;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.projects:hover{
+    margin-top: 20px;
+    background: azure;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transform: scale(1.05);
+}
+
+button{
+    border-radius: 0px;
+    background-color: orangered;
+    transition: all 0.4s ease;
+    border: 1px solid black;
+    text-decoration-color: #f4f4f4;
+
+}
+
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: transform 0.5s ease;
+    transform: translateY(-5px);
+
+}
+
+div a {
+    color: rgba(100, 200, 200, 1);
+    text-decoration: none;
+
+  }
+  
+  div a {
+    background:
+      linear-gradient(
+        to right,
+        rgba(100, 200, 200, 1),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  div a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+
+
+
+
